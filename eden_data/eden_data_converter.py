@@ -2,6 +2,8 @@ import os
 import sys
 import csv
 
+# TODO : ajouter l'intitulé des codes géographiques : DEP, VIL, CIR?
+
 # path of folder containing files to be converted
 folder_input = sys.argv[1]
 # architecture of subfolders must be as follows
@@ -18,6 +20,7 @@ elec_types = {
     "5" : "municipale",
     "9" : "européenne",
 }
+# TODO : ajouter les codes manquants (régionales : 8)
 
 # function to complete election year
 def whatyearisthis(truncatedyear):
